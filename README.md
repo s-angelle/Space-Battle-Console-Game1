@@ -22,17 +22,19 @@ firepower is the amount of damage done to the hull of the target with a succe
 Every time the ship will attack, calculate the chance that the damage will hit the opposing ship using Math.random()
 
 
-** Player Spaceship **
 
-3. The USS Schwarzenegger will have the following properties:
+3. The USS Schwarzenegger (player spaceship) will have the following properties:
 
 hull - 20 firepower -5 accuracy - .7
+
 
 4. The alien ships will each have the following ranged properties determined randomly:
 
 hull - between 3 and 6 firepower - between 2 and 4 accuracy - between .6 and .8
 
+
 5. Get user input via the browser.
+
 
 6. The app should run in the DOM. Users should see instructions through prompts, but the values of the enemy ship should change in the DOM.
 
