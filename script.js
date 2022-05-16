@@ -30,7 +30,7 @@ class SpaceShip {
             
         }
     }
-};
+}
 
 // Functions are added to meet criteria of game:
 
@@ -52,10 +52,10 @@ function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
-};
+}
 function getRandomNum(min, max) {
     return Math.random() * (max - min) + min;
-};
+}
 
 // Create player's spaceship and add it to the SpaceShip class.
 
@@ -67,13 +67,13 @@ const spaceFleet = [];
 
 function addShips(i) {
 
- spaceFleet.push(new SpaceShip(`AlienShip${i}`, getRandomInt(3, 6), getRandomInt(2, 4), getRandomNum(.6, .8)))
+ spaceFleet.push(new SpaceShip(`AlienShip${i}`, getRandomInt(3, 6), getRandomInt(2, 4), getRandomNum(.6, .8)));
 
-};
+}
 
 for (let i = 0; i < 6; i++) {
     addShips(i);
-};
+}
 
 // Printing enemy array to console, so player can see the spaceships to battle.
 
@@ -98,8 +98,8 @@ getPlayerHull();
 
 // Creating a function to update the current enemy ship being battled as the battle progresses for better user visualization.
 
-function getEnemyName(){nameBox.innerText = `${alienAttacker.name}`
-};
+function getEnemyName(){nameBox.innerText = `${alienAttacker.name}`;
+}
 
 getEnemyName();
 
@@ -108,16 +108,16 @@ getEnemyName();
 function ussAttack() {
 
     if (Math.random() <= ussHelloWorld.accuracy) {
-        alienAttacker.hull = alienAttacker.hull - ussHelloWorld.firepower
+        alienAttacker.hull = alienAttacker.hull - ussHelloWorld.firepower;
 
         getEnemyHull();
 
         console.log(`You hit for ${ussHelloWorld.firepower} damage! `);
         
     } else {
-        console.log(`You missed! Try again!`)
+        console.log(`You missed! Try again!`);
     }
-};
+}
 
 // Creating attack function for enemy (CPU)
 function alienAttack() {
@@ -127,12 +127,12 @@ function alienAttack() {
 
         getPlayerHull();
 
-        console.log(`They hit for ${alienAttacker.firepower} damage! `)
+        console.log(`They hit for ${alienAttacker.firepower} damage! `);
 
     } else {
-        console.log(`They missed! Nice!`)
+        console.log(`They missed! Nice!`);
     }
-};
+}
 
 // Creating a function that is evoked when player loses. Prompting them if they want to continue afterwards.
  function lose(){
@@ -144,7 +144,7 @@ function alienAttack() {
     bodyContainer.style.width = "0px";
 
     console.dir(body);
- };
+ }
 
  
 // Creating function for combat between player and CPU.
@@ -153,7 +153,7 @@ function combat() {
     
             // If player lost
             if (ussHelloWorld.alive === false){
-                lose()
+                lose();
             }
         
         ussAttack();
@@ -168,9 +168,9 @@ function combat() {
 
         if (spaceFleet.length > 0){
 
-        alienAttacker = spaceFleet.pop()
+        alienAttacker = spaceFleet.pop();
 
-        } else { console.log(`You Win`)
+        } else { console.log(`You Win`);
     }
 
          /*flanking */
@@ -182,7 +182,7 @@ function combat() {
 
         getThyPrompt();
     }
-};
+}
 
 // Prompt and re-prompt on wrong answer entered in input field of the prompt.
 function getThyPrompt(){
@@ -204,11 +204,11 @@ function getThyPrompt(){
 
             console.log(`Stop playing, you lost.`);
            
-     } else { console.log(`Please type continue or retreat.`)
-        getThyPrompt()
-    };
-  };
-};
+     } else { console.log(`Please type continue or retreat.`);
+        getThyPrompt();
+    }
+  }
+}
 
 // Creating event that will start combat upon player clicking button.
 
