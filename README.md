@@ -1,7 +1,7 @@
-========== This is a Chrome Dev Tool Console Game ==========
+## This is a Chrome Dev Tool Console Game
 
 
-=== Game Goals / Specifications ===
+## Game Goals / Specifications 
 
 
 Build a game of battling alien spaceships using Javascript. Earth has been attacked by a horde of aliens! You are the captain of the USS Schwarzenegger, on a mission to destroy every last alien ship. Battle the aliens as you try to destroy them with your lasers. There are six alien ships. The aliens' weakness is that they are too logical and attack one at a time: they will wait to see the outcome of a battle before deploying another alien ship. Your strength is that you have the initiative and get to attack first. However, you do not have targeting lasers and can only attack the aliens in order. After you have destroyed a ship, you have the option to make a hasty retreat.
@@ -45,18 +45,17 @@ hull - between 3 and 6 firepower - between 2 and 4 accuracy - between .6 and .8
 
 
 
-=== Stretch Goals / Improvements Needed ===
-
+## Stretch Goals / Improvements Needed
 
 
 1. Add functionality to the cancel button located in the prompt.
 
-3. Create a button to give option to restart game.
+2. Create a button to give option to restart game.
 
-5. Keep track of points for the number of wins the player has.
+3. Keep track of points for the number of wins the player has.
 
-7. Update function to display AlienShip currently being fought.
+4. Update function to display AlienShip currently being fought.
 
-9. Make the players and enemies stronger after each battle.
+5. Make the players and enemies stronger after each battle.
 
-11. Distribute medals and power ups to the player depending on points.
+6. Distribute medals and power ups to the player depending on points.
